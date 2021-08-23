@@ -365,7 +365,6 @@ public class Local_application {
             send_message("terminate", "Local_app");
 
 
-        //TODO: we can create s3,sqs and ec2 operations classes to prevent double code(send message, send file, etc)
 
 
     }
