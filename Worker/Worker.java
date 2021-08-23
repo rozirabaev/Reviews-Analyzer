@@ -97,7 +97,7 @@ public class Worker {
 
 
     public static void main(String[] args) throws IOException {
-        //TODO:Timer Thread
+
         sentimentAnalysisHandler = new sentimentAnalysisHandler();
         namedEntityRecognitionHandler = new namedEntityRecognitionHandler();
         System.setProperty("aws.region", "us-east-1");
@@ -110,7 +110,6 @@ public class Worker {
 
             List<Message> messages = get_messages(queueUrl);
 
-            //TODO:pop from the queue
             if(messages.size()!=0) {
                 System.out.println("Worker got message");
                 Message m = messages.get(0);
